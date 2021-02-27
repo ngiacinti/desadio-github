@@ -1,0 +1,289 @@
+@import "variables";
+
+   
+   
+   *{        
+    box-sizing: border-box;
+    margin: 0px; 
+    padding: 0px;
+    }
+    
+    
+    header {
+
+        .navbar-brand {
+            width: 150px;
+        }
+        
+        .container-fluid {
+            background-color: white;
+            min-height: 90px;
+            width: 85%;
+        }
+        
+        .bg-light {
+            background-color: white!important;
+        
+        }
+        
+        .nav-link {
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+        
+        }
+        
+        .navbar-nav {
+            margin-left: auto;
+        }
+        
+    
+    
+        .logo-menu {
+            float: left;
+            margin: auto;
+            padding: 0px;
+            margin: 0px;
+            max-width: 150px;
+        }
+        
+        video {
+            width: 100%;
+            margin: 0%;
+            padding: 0%;
+            
+        }
+
+    }
+
+
+    
+
+
+   
+
+    section {
+        width: 1200px;
+        margin: auto;
+        font-family: $font-main;        
+        padding: 50px 0px 50px 0px;
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 19px;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 40px 0px 50px 0px;
+        }
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 19px;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 15px 0px 50px 0px;
+        }
+
+        p {
+
+            color: #1d1d1d;
+            font-size: 16px;
+            word-spacing: 2px;
+            text-indent: 1px;
+        }
+
+       
+    }
+    
+        
+
+    #servicios {
+        margin: 0px;
+        width: 100%!Important;
+        background-image: linear-gradient(to left,#EAEAEA, #F7F7F7);
+        padding-top: 30px;
+       
+
+      
+      
+    }
+
+
+
+    .banner-conteainer {
+        display: flex;
+        justify-content: center;
+        
+        .banner-coach, .banner-marketing, .banner-research {
+            padding: 0px 20px;
+        
+        }
+        
+        
+        .banner-coach:hover{
+            transform: translateY(-20px);
+               
+            
+        }
+        .banner-marketing:hover{
+            transform: translateY(-20px);
+            
+            
+        } 
+        .banner-research:hover {
+            transform: translateY(-20px);
+            
+            
+        }
+        
+        .banner-coach, .banner-marketing, .banner-research {
+            transition: all 1s;
+        }
+        
+        
+    }
+
+    #alianzas {
+        text-align: center;
+
+        .logos-alianza {
+            margin: 40px;
+            padding: 10px;
+        }
+    }
+             
+
+    #contacto {
+        min-height: 600px;
+
+        .columna-izquierda {
+            float: left;
+            width: 25%;
+            margin-left: 20%;
+            margin-right: 5%;
+            min-height: 300px;
+            text-align: left;
+        
+            
+        }
+        
+        .columna-derecha {
+            float: left;
+            width: 25%;
+            margin-right: 25%;
+            min-height: 300px;
+            text-align: left;
+        }
+
+        .boton-formulario {
+            color: white;
+            background-color: $color-button;
+            margin: 30px 10px 30px 5px;
+            padding: 10px 20px 10px 20px;
+            border-radius:10px;
+            border: none;   
+        }
+
+
+    }
+        
+
+footer {
+    margin: auto;
+    font-family: $font-main;
+    font-size: 16px;
+    text-align: center;
+    word-spacing: 2px;
+    text-indent: 1px;
+    padding: 50px 0px 50px 0px;
+    background-color: #4C4847; 
+    min-height: 100px;
+    width: 100%;
+ 
+    
+    .nav-footer {
+        padding-top: 30px;
+        text-align: center;
+       }
+    
+    .nav-footer a {
+        text-decoration: none;
+        color: white;
+        margin: 20px;
+        
+    }
+           
+  
+}
+
+
+/*Mobile*/
+@media only screen and (max-width: 400px) {
+   
+    header, Section, footer {
+        width: 100%;
+        margin: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+                     
+        .menu {
+            height: 300px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;        
+            align-items: center;
+            
+            
+        }
+    
+     
+        .banner-conteainer {
+           flex-direction: column;
+           text-align: center;
+           
+           
+           
+        }
+    
+        .img-service {
+           
+            max-width: 90%;
+            padding-top: 15px;
+                    
+         
+    
+        }
+    
+        .columna-izquierda {
+           
+           width: 100%;
+           margin: 0;
+           padding-top: 15px;
+        }
+        
+        .columna-derecha {
+           width: 100%;
+           margin: 0;
+           padding-top: 50px;
+         
+        }
+    
+    
+        #contacto {
+        min-height: 900px;
+           
+    
+        }
+    
+        .input-responsive  {
+            width: 100%;
+        }
+        
+     }
+    
+    
+
+
+
+}
+
+
